@@ -1,0 +1,33 @@
+
+@use "./variables" as v;
+
+form {
+  display: flex;
+  flex-direction: column;
+  margin: 30px 0 0;
+  padding-bottom: 30px;
+  align-items: space-between;
+  .formFlex {
+    display: flex;
+    justify-content: space-between;
+    input {
+      display: inline-block;
+      border: none;
+      border-bottom: 2px solid v.$black;
+      width: 45%;
+      padding: 20px 40px 25px;
+    }
+  }
+  textarea {
+    border: 2px solid v.$black;
+    margin: 40px 0 20px;
+    padding: 40px 40px;
+    resize: none;
+  }
+  input::placeholder,
+  textarea::placeholder {
+  text-transform: uppercase;
+  color: v.$black;
+  opacity: 1;
+  }
+} 
