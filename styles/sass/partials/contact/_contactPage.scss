@@ -1,0 +1,12 @@
+@use "../variables" as v;
+
+// Contact page styles 
+
+.mainContact {
+  background-color: v.$ice;
+  .contactPage {
+    display: flex;
+    justify-content: space-between;
+    // border: 2px solid green;
+  }
+}

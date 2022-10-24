@@ -498,6 +498,16 @@ form textarea::placeholder {
       flex-shrink: 1.5;
 }
 
+.blogHeader {
+  background-image: url(../assets/blog-image.jpg);
+  background-size: cover;
+  background-position: center;
+  padding-bottom: 330px;
+}
+.blogHeader h1 {
+  margin-top: 130px;
+}
+
 .contactHeader {
   background: url(../assets/contact-image.jpg) no-repeat center;
   background-size: cover;
