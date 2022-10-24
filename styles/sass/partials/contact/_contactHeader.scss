@@ -1,0 +1,13 @@
+@use "../variables" as v;
+
+// Contact header styles
+
+.contactHeader {
+  background: url(../assets/contact-image.jpg) no-repeat center;
+  background-size: cover;
+  height: auto;
+  padding-bottom: 280px;
+  h1 {
+    margin-top: 130px;
+  }
+}

@@ -498,6 +498,16 @@ form textarea::placeholder {
       flex-shrink: 1.5;
 }
 
+.contactHeader {
+  background: url(../assets/contact-image.jpg) no-repeat center;
+  background-size: cover;
+  height: auto;
+  padding-bottom: 280px;
+}
+.contactHeader h1 {
+  margin-top: 130px;
+}
+
 footer {
   background-color: #151514;
   color: #F5F5F5;
