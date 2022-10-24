@@ -982,16 +982,46 @@ form textarea::placeholder {
     opacity: 0.5;
   }
   button:hover, button:focus {
-    -webkit-transform: scale(0.8);
-            transform: scale(0.8);
+    -webkit-transform: scale(1.02);
+            transform: scale(1.02);
   }
   footer {
     font-size: 0.85rem;
     padding: 5px;
   }
 }
-@media (max-width: 800px) {
+@media (max-width: 865px) {
   /* all of our styles for TABLET devices will go within this breakpoint */
+  .navBar {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .navBar ul .contactLi {
+    padding-right: 25px;
+  }
+  .logo {
+    text-align: center;
+    margin-bottom: 15px;
+  }
+  .homeLogo {
+    position: absolute;
+  }
+  header {
+    padding-left: 0;
+  }
+  h1 {
+    text-align: center;
+  }
+}
+@media (max-width: 655px) {
+  .headerNav {
+    font-size: 0.7rem;
+  }
+  .headerNav li {
+    padding: 0px 25px;
+  }
 }
 @media (max-width: 500px) {
   /* all of our styles for MOBILE devices will go within this breakpoint */
