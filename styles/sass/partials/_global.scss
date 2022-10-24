@@ -1,12 +1,45 @@
-@use "./variables";
+
+@use "./variables" as v;
+//Base styles
 
 .wrapper {
+  max-width: 1260px;
   width: 90%; 
   margin: 0 auto;
-  max-width: 1200px;
 }
 
 img {
   max-width: 100%;
-  display: block;
+  // display: block;
+}
+
+ul, li, a, p, h1, h2, h3 {
+  padding: 0;
+  margin: 0;
+}
+
+button {
+  background-color: v.$evergreen;
+  color: v.$white;
+  letter-spacing: 0.05rem;
+  text-align: center;
+  border: 0;
+  padding: 15px 20px;
+  margin-top: 20px;
+    &:hover, 
+    &:focus {
+      transform: scale(1.1);
+      background-color: v.$evergreenHover;
+    } 
+  }
+
+  .bold {
+    &:hover, 
+    &:focus {
+      font-weight: bold;
+    }
+  }
+
+header {
+  padding-left: 30px;
 }

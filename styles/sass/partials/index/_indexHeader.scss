@@ -1,0 +1,25 @@
+@use "../variables" as v;
+
+.indexHeader {
+  background: url(../assets/header-home.jpg) center;
+  padding-bottom: 470px;
+  background-size: cover;
+  background-position: right;
+  position: relative;
+  width: 100vw;
+  height: auto; 
+  h1 {
+    padding-top: 10px;
+    padding-left: 55px;
+  }
+  .blueChairsContainer {
+    position: absolute;
+    border: 2px solid green;
+    transform: translate(-260px, 55px);
+    display: flex;
+    .blueChairs {
+      flex-basis: auto;
+      flex-shrink: 1.5;
+    }
+  }
+}
