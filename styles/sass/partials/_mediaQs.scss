@@ -1,11 +1,35 @@
 @use "./variables" as v;
 
-@media (max-width: 1300px) {
+@media (max-width: 1280px) {
+  .blogTextContainer {
+    padding-top: 350px;
+  }
+}
 
+@media (max-width: 1190px) {
+  .blogTextContainer {
+    padding-top: 300px;
+  }
 }
 
 @media (max-width: 1100px) {
   /* all of our styles for smaller DESKTOP devices will go within this breakpoint */
+
+  body {
+    font-size: 0.9rem;
+  }
+
+  h1 {
+    font-size: 3.2rem;
+  }
+
+  h2 {
+    font-size: 1.55rem
+  }
+
+  h3 {
+    font-size: 1.2rem
+  }
 
   //HEADER
   .headerNav {
@@ -24,7 +48,7 @@
   }
 
   .blogHeader {
-    padding-bottom: 300px;
+    padding-bottom: 230px;
   }
 
   // INDEX
@@ -47,6 +71,25 @@
 
   }
 
+  .indexSearchStyle {
+    .styleTextContainer {
+      padding: 90px 0;
+    }
+    }
+  
+    .indexIconsSection,
+    .materialsFlexContainer  {
+      padding: 60px 0;
+    }
+
+    .indexGallery {
+      ul {
+        li {
+          padding: 80px 0;
+        }
+      }
+    }
+
 
 
 
@@ -55,8 +98,22 @@
     background-position: left;
   }
 
+  // .blogSection {
+  //   background-color: v.$white;
+  // }
+
   .blogImgContainer {
-    width: 75%;
+    background-color: v.$white;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    position: static;
+    transform: translate(0, 0);
+  }
+
+  .blogImg {
+    width: 70%;
+    justify-self: center;
   }
 
   .blogMainFlex {
@@ -69,7 +126,7 @@
       transform: translate(0, 0);
       width: 100%;
       flex-direction: row;
-      border: 2px solid blue;
+      // border: 2px solid blue;
       position: static;  
     }
   }
@@ -78,20 +135,31 @@
   .asideImgContainer {
     transform: translate(0, 0);
     position: static;
-    padding-bottom: 0;
+    padding-bottom: 10px;
     background-color: v.$white;
-
   }
+
   .asideImgContainer {
     width: 45%;
+    background-color: v.$white;
+  }
+
+  .asideTextContainer {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 50px;
+    font-size: 0.85rem;
   }
 
   .asideImg {
-    box-shadow: none;
+    box-shadow: -10 -10 0 -4 yellow;
+    border-left: 10px solid yellow;
   }
 
   .mission {
     padding-bottom: 0;
+    width: 50%;
+    padding-right: 25px;
   }
 
   h3 {
@@ -113,8 +181,9 @@
   padding: 0 70px;
 }
 
-.blogImgContainer {
-  left: 130px;
+
+.blogTextContainer {
+  padding-top: 15px;
 }
 
 
@@ -166,6 +235,45 @@
     padding: 5px;
   }
 } // END MEDIA QUERY 1100 PX ----------------------------------------------
+@media (max-width: 940px) {
+  h3 {
+  font-size: 1.1rem;
+}
+
+.asideTextContainer {
+  font-size: 0.8rem;
+
+}
+
+  .asideImgContainer {
+    width: 50%; 
+  }
+
+}
+
+// @media (max-width: 800px) {
+//   .asideTextContainer {
+//     flex-direction: column;
+//     width: 90%;
+//     padding-left: 20px;
+//     justify-content: space-evenly;
+//     font-size: 0.8rem;
+
+//   }
+
+//   .asideImgContainer {
+//     width: 100%; 
+//   }
+
+//   .mission {
+//     width: 100%;
+//     padding-right: 0px;
+//   }
+// }
+
+// h3 {
+//   font-size: 1.1rem;
+// }
 
 @media (max-width: 865px) {
   /* all of our styles for TABLET devices will go within this breakpoint */
@@ -197,9 +305,22 @@
     text-align: center;
   }
 
-  .indexHeader {
-    padding-bottom: 430px;
+  // .indexHeader {
+  //   padding-bottom: 430px;
+  //   height: 100vh;
 
+  // }
+
+  // INDEX
+  .indexSearchStyle {
+  .styleTextContainer {
+    padding: 70px 0;
+  }
+  }
+
+  .indexIconsSection,
+  .materialsFlexContainer  {
+    padding: 50px 0;
   }
 
   //BLOG 
@@ -223,8 +344,34 @@
     font-size: 0.85rem;
   }
 
+  .asideImgContainer {
+    display: none;
+  }
+  .asideTextContainer {
+    justify-content: space-evenly;
+  }
+
 
 } // END MEDIA QUERY 865 PX ----------------------------------------------
+
+@media (max-width: 775px) {
+  .materialsFlexContainer {
+    .wrapper {
+      flex-direction: column-reverse;
+
+      .materialsTextContainer {
+        width: 100%;
+        margin-right: 0;
+        align-items: center;
+      }
+      .materialsImgContainer {
+        // width: 80%;
+        margin-bottom: 50px;
+
+      }
+    }
+  }
+} // END MEDIA QUERY 775PX --------------------------
 
 @media (max-width: 655px) { 
   .headerNav {

@@ -518,7 +518,6 @@ form textarea::placeholder {
 }
 
 .materialsFlexContainer {
-  border: 5px solid blue;
   padding-bottom: 140px;
   padding-top: 290px;
   display: -webkit-box;
@@ -535,15 +534,34 @@ form textarea::placeholder {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  border: 5px solid red;
   -ms-flex-item-align: end;
       align-self: flex-end;
 }
 .materialsFlexContainer .wrapper .materialsTextContainer {
-  width: 60%;
+  width: 55%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+  margin-right: 70px;
 }
 .materialsFlexContainer .wrapper .materialsTextContainer .materialsImgContainer {
   width: 40%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 3 auto;
+          flex: 1 3 auto;
 }
 
 .materialsImg {
@@ -577,11 +595,9 @@ form textarea::placeholder {
       -ms-flex-pack: justify;
           justify-content: space-between;
   padding: 100px 0;
-  border: 5px solid blue;
 }
 .indexIconsSection .iconsTextContainer {
   width: 50%;
-  border: 5px solid red;
 }
 .indexIconsSection .iconsTextContainer .indexIconImg {
   text-align: center;
@@ -614,11 +630,9 @@ form textarea::placeholder {
 }
 .iconsTextContainer .flextest {
   width: 10%;
-  border: 2px solid pink;
 }
 .iconsTextContainer .flextest2 {
   width: 90%;
-  border: 2px solid lightblue;
   padding-left: 10px;
 }
 
@@ -721,7 +735,6 @@ form textarea::placeholder {
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: flex-end;
-  border: 2px solid lightskyblue;
   -webkit-transform: translate(-110px, 0px);
           transform: translate(-110px, 0px);
   position: relative;
@@ -744,8 +757,7 @@ form textarea::placeholder {
   padding-top: calc(120px + 20vw);
 }
 .blogTextContainer p {
-  padding: 10px 0;
-  border: 1px solid plum;
+  padding-bottom: 20px;
 }
 .blogTextContainer h2 {
   padding-top: 50px;
@@ -755,16 +767,14 @@ form textarea::placeholder {
   border-bottom: 10px solid #F8FB05;
   border-right: 10px solid #F8FB05;
   background-color: #F5F5F5;
-  padding-bottom: 50px;
+  padding-bottom: 80px;
 }
 
 .commentSection {
-  border: 2px solid blue;
   padding-bottom: 70px;
 }
 .commentSection h2 {
-  padding: 50px 0 30px;
-  margin-bottom: 0;
+  margin: 50px 0 30px;
 }
 
 .comment1,
@@ -772,12 +782,11 @@ form textarea::placeholder {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  border: 2px solid red;
 }
 
 .comment2 {
   margin-bottom: 60px;
-  margin-top: 90px;
+  margin-top: 80px;
 }
 
 .comment1ImgContainer,
@@ -922,8 +931,30 @@ footer {
   padding: 10px;
 }
 
+@media (max-width: 1280px) {
+  .blogTextContainer {
+    padding-top: 350px;
+  }
+}
+@media (max-width: 1190px) {
+  .blogTextContainer {
+    padding-top: 300px;
+  }
+}
 @media (max-width: 1100px) {
   /* all of our styles for smaller DESKTOP devices will go within this breakpoint */
+  body {
+    font-size: 0.9rem;
+  }
+  h1 {
+    font-size: 3.2rem;
+  }
+  h2 {
+    font-size: 1.55rem;
+  }
+  h3 {
+    font-size: 1.2rem;
+  }
   .headerNav {
     font-size: 0.85rem;
   }
@@ -938,7 +969,7 @@ footer {
     visibility: hidden;
   }
   .blogHeader {
-    padding-bottom: 300px;
+    padding-bottom: 230px;
   }
   .materialsFlexContainer {
     padding: 80px 0;
@@ -961,11 +992,35 @@ footer {
   .iconsMarginBottom {
     margin-bottom: 30px;
   }
+  .indexSearchStyle .styleTextContainer {
+    padding: 90px 0;
+  }
+  .indexIconsSection,
+.materialsFlexContainer {
+    padding: 60px 0;
+  }
+  .indexGallery ul li {
+    padding: 80px 0;
+  }
   .blogHeader {
     background-position: left;
   }
   .blogImgContainer {
-    width: 75%;
+    background-color: #F5F5F5;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    position: static;
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
+  }
+  .blogImg {
+    width: 70%;
+    justify-self: center;
   }
   .blogMainFlex {
     -webkit-box-orient: vertical;
@@ -986,7 +1041,6 @@ footer {
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
-    border: 2px solid blue;
     position: static;
   }
   .asideTextContainer,
@@ -994,18 +1048,32 @@ footer {
     -webkit-transform: translate(0, 0);
             transform: translate(0, 0);
     position: static;
-    padding-bottom: 0;
+    padding-bottom: 10px;
     background-color: #F5F5F5;
   }
   .asideImgContainer {
     width: 45%;
+    background-color: #F5F5F5;
+  }
+  .asideTextContainer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding: 10px 50px;
+    font-size: 0.85rem;
   }
   .asideImg {
-    -webkit-box-shadow: none;
-            box-shadow: none;
+    -webkit-box-shadow: -10 -10 0 -4 yellow;
+            box-shadow: -10 -10 0 -4 yellow;
+    border-left: 10px solid yellow;
   }
   .mission {
     padding-bottom: 0;
+    width: 50%;
+    padding-right: 25px;
   }
   h3 {
     padding-bottom: 2px;
@@ -1020,8 +1088,8 @@ footer {
 .commentSection {
     padding: 0 70px;
   }
-  .blogImgContainer {
-    left: 130px;
+  .blogTextContainer {
+    padding-top: 15px;
   }
   .contactPage {
     -webkit-box-orient: vertical;
@@ -1084,6 +1152,17 @@ form textarea::placeholder {
     padding: 5px;
   }
 }
+@media (max-width: 940px) {
+  h3 {
+    font-size: 1.1rem;
+  }
+  .asideTextContainer {
+    font-size: 0.8rem;
+  }
+  .asideImgContainer {
+    width: 50%;
+  }
+}
 @media (max-width: 865px) {
   /* all of our styles for TABLET devices will go within this breakpoint */
   .navBar {
@@ -1108,8 +1187,12 @@ form textarea::placeholder {
   h1 {
     text-align: center;
   }
-  .indexHeader {
-    padding-bottom: 430px;
+  .indexSearchStyle .styleTextContainer {
+    padding: 70px 0;
+  }
+  .indexIconsSection,
+.materialsFlexContainer {
+    padding: 50px 0;
   }
   .blogHeader {
     background-position: left;
@@ -1124,6 +1207,32 @@ form textarea::placeholder {
   }
   .contactInfo {
     font-size: 0.85rem;
+  }
+  .asideImgContainer {
+    display: none;
+  }
+  .asideTextContainer {
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+  }
+}
+@media (max-width: 775px) {
+  .materialsFlexContainer .wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+  .materialsFlexContainer .wrapper .materialsTextContainer {
+    width: 100%;
+    margin-right: 0;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .materialsFlexContainer .wrapper .materialsImgContainer {
+    margin-bottom: 50px;
   }
 }
 @media (max-width: 655px) {
