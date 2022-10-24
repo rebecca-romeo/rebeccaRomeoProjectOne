@@ -518,6 +518,174 @@ form textarea::placeholder {
   margin-top: 130px;
 }
 
+.materialsFlexContainer {
+  border: 5px solid blue;
+  padding-bottom: 140px;
+  padding-top: 290px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.materialsFlexContainer .wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: 5px solid red;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+}
+.materialsFlexContainer .wrapper .materialsTextContainer {
+  width: 60%;
+}
+.materialsFlexContainer .wrapper .materialsTextContainer .materialsImgContainer {
+  width: 40%;
+}
+
+.materialsImg {
+  -webkit-box-shadow: -15px 15px #F8FB05;
+          box-shadow: -15px 15px #F8FB05;
+}
+
+.indexGallery {
+  background-color: #E0FDDF;
+}
+.indexGallery ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.indexGallery ul li {
+  width: 31%;
+  padding: 100px 0;
+}
+
+.indexIconsSection {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 100px 0;
+  border: 5px solid blue;
+}
+.indexIconsSection .iconsTextContainer {
+  width: 50%;
+  border: 5px solid red;
+}
+.indexIconsSection .iconsTextContainer .indexIconImg {
+  text-align: center;
+  line-height: 25px;
+}
+.indexIconsSection .iconsTextContainer .indexIconImg,
+.indexIconsSection .iconsTextContainer .indexSvgImg {
+  font-size: 24px;
+  background-color: #F8FB05;
+  border-radius: 50%;
+  padding: 10px;
+  margin-right: 10px;
+  width: 50px;
+  height: 50px;
+}
+
+.indexSvgImg {
+  max-height: 50px;
+  min-width: 50px;
+}
+
+.iconsMarginBottom {
+  margin-bottom: 60px;
+}
+
+.iconsTextContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.iconsTextContainer .flextest {
+  width: 10%;
+  border: 2px solid pink;
+}
+.iconsTextContainer .flextest2 {
+  width: 90%;
+  border: 2px solid lightblue;
+  padding-left: 10px;
+}
+
+.indexProgramsSection {
+  background-color: #E0FDDF;
+  padding-top: 100px;
+  padding-bottom: 80px;
+}
+
+.programsFlexContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.locationSection {
+  border: 2px solid orange;
+  width: 44%;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  text-align: right;
+  padding-top: 25%;
+  position: relative;
+}
+.locationSection .locationImgContainer {
+  position: absolute;
+  top: -140px;
+  left: -140px;
+  width: calc(100% + 9vw);
+}
+.locationSection .locationImgContainer img {
+  -webkit-box-shadow: 30px 30px 0px -4px #F8FB05;
+          box-shadow: 30px 30px 0px -4px #F8FB05;
+}
+
+.programSection {
+  width: 41%;
+  position: relative;
+}
+.programSection .programImgContainer {
+  border: 2px solid magenta;
+  position: absolute;
+  bottom: -110px;
+  left: -30px;
+  width: calc(100% + 7.3vw);
+}
+.programSection .programImgContainer img {
+  -webkit-box-shadow: -30px 30px 0px -4px #F8FB05;
+          box-shadow: -30px 30px 0px -4px #F8FB05;
+}
+
+.indexSearchStyle .styleTextContainer {
+  text-align: center;
+  padding: 150px 0;
+}
+.indexSearchStyle .styleTextContainer p {
+  text-align: left;
+  margin-bottom: 10px;
+}
+.indexSearchStyle .styleImg {
+  width: 100%;
+}
+
 .blogMain,
 .formBackground {
   background-color: #E0FDDF;

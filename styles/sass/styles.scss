@@ -19,6 +19,11 @@
 
 // MAIN SECTION PARTIALS
   // INDEX
+  @use "./partials/index/materials";
+  @use "./partials/index/gallery";
+  @use "./partials/index/icons";
+  @use "./partials/index/programs";
+  @use "./partials/index/styles";
 
   // BLOG PAGE
   @use "./partials/blog/main";

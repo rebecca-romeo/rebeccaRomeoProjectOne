@@ -1,0 +1,25 @@
+@use "../variables" as v;
+
+.materialsFlexContainer {
+  border: 5px solid blue;
+  padding-bottom: 140px;
+  padding-top: 290px;
+  display: flex;
+  .wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 5px solid red;
+    align-self: flex-end;
+    .materialsTextContainer {
+      width: 60%;
+    .materialsImgContainer {
+      width: 40%;
+      }
+    }
+  }
+}
+
+.materialsImg {
+  box-shadow: -15px 15px v.$brightYellow;
+  }
