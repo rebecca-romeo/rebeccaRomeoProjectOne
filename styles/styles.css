@@ -321,7 +321,7 @@ h2 {
 }
 
 h3 {
-  font-size: 1.4rem;
+  font-size: 1.3rem;
   line-height: 1.6rem;
   margin: 20px 0;
 }
@@ -743,7 +743,7 @@ form textarea::placeholder {
 }
 
 .blogTextContainer {
-  padding-top: 440px;
+  padding-top: calc(120px + 20vw);
 }
 .blogTextContainer p {
   padding: 10px 0;
@@ -815,8 +815,8 @@ form textarea::placeholder {
 }
 
 .asideImgContainer {
-  -webkit-transform: translate(22px, -40px);
-          transform: translate(22px, -40px);
+  -webkit-transform: translate(20px, -40px);
+          transform: translate(20px, -40px);
 }
 
 .asideImg {
@@ -929,6 +929,71 @@ footer {
   .headerNav {
     font-size: 0.85rem;
   }
+  .blogHeader {
+    padding-bottom: 300px;
+  }
+  .blogHeader {
+    background-position: left;
+  }
+  .blogImgContainer {
+    width: 75%;
+  }
+  .blogMainFlex {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .blogMainFlex .blogSection {
+    width: 100%;
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
+  }
+  .blogMainFlex .asideContainer {
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
+    width: 100%;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    border: 2px solid blue;
+    position: static;
+  }
+  .asideTextContainer,
+.asideImgContainer {
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
+    position: static;
+    padding-bottom: 0;
+    background-color: #F5F5F5;
+  }
+  .asideImgContainer {
+    width: 45%;
+  }
+  .asideImg {
+    -webkit-box-shadow: none;
+            box-shadow: none;
+  }
+  .mission {
+    padding-bottom: 0;
+  }
+  h3 {
+    padding-bottom: 2px;
+  }
+  span {
+    border-bottom: 5px solid #F8FB05;
+  }
+  .blogArticle {
+    border-right: none;
+  }
+  .blogArticle,
+.commentSection {
+    padding: 0 60px;
+  }
+  .blogImgContainer {
+    left: 130px;
+  }
   .contactPage {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -986,7 +1051,7 @@ form textarea::placeholder {
             transform: scale(1.02);
   }
   footer {
-    font-size: 0.85rem;
+    font-size: 0.8rem;
     padding: 5px;
   }
 }
@@ -1013,6 +1078,20 @@ form textarea::placeholder {
   }
   h1 {
     text-align: center;
+  }
+  .blogHeader {
+    background-position: left;
+    padding-bottom: 260px;
+  }
+  .contactHeader {
+    padding-bottom: 250px;
+  }
+  .contactFormContainer {
+    min-width: 98%;
+    left: 23px;
+  }
+  .contactInfo {
+    font-size: 0.8rem;
   }
 }
 @media (max-width: 655px) {

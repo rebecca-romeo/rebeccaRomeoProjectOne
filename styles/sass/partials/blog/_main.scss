@@ -9,22 +9,11 @@
   display: flex;
   justify-content: space-between;
 
-  // table/mobile
-  // flex-direction: column;
-
   .blogSection {
-    // desktop
     width: 70%;
-
-    // tablet/mobile
-    // width: 100%;
   }
   .asideContainer {
-    // desktop
-    width: 30%
-
-    // tablet and mobile
-    // width: 100%;
+    width: 30%;
   }
 }
 
