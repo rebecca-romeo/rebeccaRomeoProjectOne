@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact</title>
+  <link href="https://fonts.googleapis.com/css2?family=Kumar+One&family=Kumar+One+Outline&family=Lato:wght@400;700&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/23395927b9.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="./styles/styles.css">
+</head>
+
+<body>
+  <!-- HEADER BEGINS -->
+  <header class="contactHeader" id="contactHeader">
+    <div class="wrapper">
+      <!-- NAV BAR AND LOGO BEGINS -->
+      <div class="navBar">
+        <div class="logo">
+          santurary <br> helpers
+        </div> <!-- END .logo -->
+        
+        <nav class="headerNav">
+          <ul>
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="./blog.html">Blog</a></li>
+            <li class="contactLi"><a href="./contact.html" class="navUnderline">Contact</a></li>
+          </ul>
+        </nav> 
+      </div> <!-- END .navFlex -->
+          
+      <h1>get in touch</h1>
+    </div> <!-- END .wrapper -->
+  </header>
+
+  <!-- MAIN SECTION BEGINS -->
+  <main class="mainContact">
+    <div class="contactPage wrapper">
+      <!-- Contact form begins -->
+      <form 
+      action="https://formspree.io/f/mnqrbwkk" 
+      method="POST" 
+      class="contactFormContainer">
+        <div class="formFlex">
+          <label for="name" class="sr-only">Provide your name</label>
+          <input type="text" id="name" name="name" placeholder="name" class="input" required>
+
+          <label for="email" class="sr-only">Provide your email address</label>
+          <input type="email" id="email" name="email" placeholder="email address" required>
+        </div>
+
+        <label for="message" class="sr-only">Leave a message</label>
+        <textarea name="message" id="message" cols="15" rows="10" placeholder="message" required></textarea>
+
+        <button type="submit" class="submit">Submit</button>
+      </form> <!-- END .contactFormContainer -->
+
+      <!-- Contact information begins -->
+      <div class="contactInfo">
+        
+        <div class="contacttest">
+          <div class="contactIcons">
+            <a href="http://www.facebook.com" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="http://www.instagram.com" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+            <a href="http://www.twitter.com" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+            <a href="http://www.whatsapp.com" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+          </div><!-- END .contactIcons -->
+  
+          
+          <a href = "mailto: info@email.com"><p class="contactEmail bold"> info@email.com</p></a>
+        </div> 
+
+        <div class="contactAddress">
+          <p>  123 - 456 - 7890 <br>
+          123 Queen Street West,<br>
+          Unit 10 <br>
+          Toronto, Ontario <br>
+          M5V2D5</p>
+        </div>
+      </div><!-- END .contactInfo -->
+    </div><!-- END .contactPage and .wrapper -->
+  </main>
+
+  <!-- FOOTER BEGINS -->
+  <footer>
+    <p>Copyright <i class="fa-regular fa-copyright"></i> 2022 Juno College</p>
+  </footer>
+</body>
+</html> 
+
