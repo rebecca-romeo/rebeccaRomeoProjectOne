@@ -21,8 +21,15 @@
   // INDEX
 
   // BLOG PAGE
+  @use "./partials/blog/main";
+  @use "./partials/blog/post";
+  @use "./partials/blog/comments";
+  @use "./partials/blog/aside";
 
   // CONTACT PAGE 
+  @use "./partials/contact/contactPage";
+  @use "./partials/contact/contactForm";
+  @use "./partials/contact/contactInfo";
 
 
 // FOOTER PARTIALS

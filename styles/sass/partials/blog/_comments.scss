@@ -1,0 +1,38 @@
+@use "../variables" as v;
+// comment section 
+
+.commentSection { 
+  border: 2px solid blue;
+  padding-bottom: 70px;
+  
+  h2 {
+    padding: 50px 0 30px;
+    margin-bottom: 0;
+  }
+}
+
+.comment1,
+.comment2 {
+  display: flex;
+  border: 2px solid red;
+}
+
+.comment2 {
+  margin-bottom: 60px;
+  margin-top: 90px;
+}
+
+.comment1ImgContainer,
+.comment2ImgContainer {
+  min-width: 15%;
+}
+
+.comment1TextContainer,
+.comment2TextContainer {
+  padding-left: 25px;
+}
+
+.commentDate {
+  text-transform: uppercase;
+  font-weight: 700;
+} 
