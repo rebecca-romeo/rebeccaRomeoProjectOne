@@ -475,7 +475,6 @@ form textarea::placeholder {
   background-size: cover;
   background-position: right;
   position: relative;
-  width: 100vw;
   height: auto;
 }
 .indexHeader h1 {
@@ -644,7 +643,6 @@ form textarea::placeholder {
   -ms-flex-item-align: end;
       align-self: flex-end;
   text-align: right;
-  padding-top: 25%;
   position: relative;
 }
 .locationSection .locationImgContainer {
@@ -929,8 +927,39 @@ footer {
   .headerNav {
     font-size: 0.85rem;
   }
+  .indexHeader {
+    background-position: center;
+    padding-bottom: 400px;
+  }
+  .indexHeader h1 {
+    padding-left: 20px;
+  }
+  .indexHeader .blueChairsContainer {
+    visibility: hidden;
+  }
   .blogHeader {
     padding-bottom: 300px;
+  }
+  .materialsFlexContainer {
+    padding: 80px 0;
+  }
+  .indexIconsSection {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .indexIconsSection .iconsTextContainer {
+    width: 85%;
+  }
+  .iconsMarginBottom {
+    margin-bottom: 30px;
   }
   .blogHeader {
     background-position: left;
@@ -989,7 +1018,7 @@ footer {
   }
   .blogArticle,
 .commentSection {
-    padding: 0 60px;
+    padding: 0 70px;
   }
   .blogImgContainer {
     left: 130px;
@@ -1051,7 +1080,7 @@ form textarea::placeholder {
             transform: scale(1.02);
   }
   footer {
-    font-size: 0.8rem;
+    font-size: 0.7rem;
     padding: 5px;
   }
 }
@@ -1079,6 +1108,9 @@ form textarea::placeholder {
   h1 {
     text-align: center;
   }
+  .indexHeader {
+    padding-bottom: 430px;
+  }
   .blogHeader {
     background-position: left;
     padding-bottom: 260px;
@@ -1091,7 +1123,7 @@ form textarea::placeholder {
     left: 23px;
   }
   .contactInfo {
-    font-size: 0.8rem;
+    font-size: 0.85rem;
   }
 }
 @media (max-width: 655px) {

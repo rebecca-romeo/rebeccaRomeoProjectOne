@@ -11,10 +11,43 @@
   .headerNav {
     font-size: 0.85rem;
   }
-  
+
+  .indexHeader {
+    background-position: center;
+    padding-bottom: 400px;
+    h1 {
+      padding-left: 20px;
+    }
+    .blueChairsContainer {
+      visibility: hidden;
+    }
+  }
+
   .blogHeader {
     padding-bottom: 300px;
   }
+
+  // INDEX
+  .materialsFlexContainer {
+    padding: 80px 0;
+  }
+
+  .indexIconsSection {
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+    .iconsTextContainer {
+      width: 85%;
+    }
+  }
+
+  .iconsMarginBottom {
+    margin-bottom: 30px;
+
+  }
+
+
 
 
   // BLOG 
@@ -77,7 +110,7 @@
 
   .blogArticle, 
 .commentSection {
-  padding: 0 60px;
+  padding: 0 70px;
 }
 
 .blogImgContainer {
@@ -129,7 +162,7 @@
 
   // FOOTER 
   footer {
-    font-size: 0.8rem;
+    font-size: 0.7rem;
     padding: 5px;
   }
 } // END MEDIA QUERY 1100 PX ----------------------------------------------
@@ -164,6 +197,10 @@
     text-align: center;
   }
 
+  .indexHeader {
+    padding-bottom: 430px;
+
+  }
 
   //BLOG 
   .blogHeader {
@@ -183,7 +220,7 @@
   }
 
   .contactInfo {
-    font-size: 0.8rem;
+    font-size: 0.85rem;
   }
 
 
