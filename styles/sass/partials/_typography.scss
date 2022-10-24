@@ -1,9 +1,74 @@
-@use "./variables";
+
+@use "./variables" as v;
+
+//Typography 
 
 html {
   font-size: 125%;
+
 }
 
-// margin padding 0
-// list styles
-// text decoration 
+body {
+  font-family: v.$lato;
+  font-size: 1rem; 
+  color: v.$black;
+  border-color: black;
+}
+
+h1, 
+h2,
+h3,
+nav,
+.logo,
+button {
+  text-transform: uppercase;
+}
+
+h2, 
+h3, 
+.logo, 
+button {
+  font-family: v.$kumarOne;
+}
+
+h1 {
+  font-family: v.$kumarOneOutline;
+  font-size: 3.4rem;
+  line-height: 3.2rem; 
+  font-weight: lighter;
+}
+
+h2 {
+  font-size: 1.65rem; 
+  line-height: 2.9rem; 
+  letter-spacing: 0.105rem; 
+  margin-bottom: 15px;
+}
+
+h3 {
+  font-size: 1.4rem; 
+  line-height: 1.6rem;
+  margin: 20px 0;
+}
+
+p {
+  font-weight: 400;
+  line-height:  1.6rem; 
+  letter-spacing: 0.1rem; 
+}
+
+nav {
+  font-weight: 700;
+  line-height: 1.45rem;
+  letter-spacing: 0.07rem;
+  text-align: center;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
