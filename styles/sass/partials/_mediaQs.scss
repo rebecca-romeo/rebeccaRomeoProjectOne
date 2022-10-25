@@ -1,15 +1,34 @@
 @use "./variables" as v;
 
-@media (max-width: 1280px) {
-  .blogTextContainer {
-    padding-top: 350px;
-  }
-}
 
-@media (max-width: 1190px) {
+// @media (max-width: 1280px) {
+//   .blogTextContainer {
+//     padding-top: 350px;
+//   }
+// }
+
+@media (max-width: 1200px) {
   .blogTextContainer {
     padding-top: 300px;
   }
+  // CONTACT PAGE
+  .contactPage {
+    flex-direction: column;
+  }
+  .contactFormContainer {
+    min-width: 98%;
+    position: relative;
+    left: 23px;
+  }
+
+  .contactInfo {
+    flex-direction: row-reverse;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    font-size: 0.9rem;
+  }
+
 }
 
 @media (max-width: 1100px) {
@@ -48,7 +67,7 @@
   }
 
   .blogHeader {
-    padding-bottom: 230px;
+    padding-bottom: 280px;
   }
 
   // INDEX
@@ -91,17 +110,6 @@
     }
 
 
-
-
-  // BLOG 
-  .blogHeader {
-    background-position: left;
-  }
-
-  // .blogSection {
-  //   background-color: v.$white;
-  // }
-
   .blogImgContainer {
     background-color: v.$white;
     width: 100%;
@@ -112,7 +120,7 @@
   }
 
   .blogImg {
-    width: 70%;
+    width: 85%;
     justify-self: center;
   }
 
@@ -187,40 +195,16 @@
 }
 
 
-  // CONTACT PAGE
-  .contactPage {
-    flex-direction: column;
-  }
-  .contactFormContainer {
-    min-width: 98%;
-    position: relative;
-    left: 23px;
-  }
-
-  .contactInfo {
-    flex-direction: row-reverse;
-    justify-content: space-evenly;
-    align-items: center;
-    width: 100%;
-    font-size: 0.9rem;
-  }
-
   // FORMS
   .formFlex {
-    flex-direction: column;
     width: 100%;
     input {
-      min-width: 100%;  
+      display: flex;
+      min-width: 40%;  
       font-size: 0.9rem;
     }
   }
 
-  form {
-    input::placeholder,
-    textarea::placeholder {
-    opacity: 0.5;
-    }
-  }
 
   button {
     &:hover, 
@@ -301,15 +285,14 @@
     padding-left: 0;
   }
 
-  h1 {
-    text-align: center;
-  }
+    .blogHeader,
+    .contactHeader {
+      h1 {
+        text-align: center;
+      }
+    }
 
-  // .indexHeader {
-  //   padding-bottom: 430px;
-  //   height: 100vh;
 
-  // }
 
   // INDEX
   .indexSearchStyle {
@@ -324,10 +307,10 @@
   }
 
   //BLOG 
-  .blogHeader {
-    background-position: left;
-    padding-bottom: 260px;
+  .blogImg {
+    box-shadow:  20px 20px 0px 0px v.$brightYellow;
   }
+
 
   // CONTACT
 
@@ -338,11 +321,15 @@
   .contactFormContainer {
     min-width: 98%;
     left: 23px;
+    padding: 30px 40px 40px;
+    height: 550px;
   }
 
-  .contactInfo {
-    font-size: 0.85rem;
+
+  .contactFormContainer {
+    box-shadow: 20px 20px 0px -4px v.$brightYellow;
   }
+
 
   .asideImgContainer {
     display: none;
@@ -355,6 +342,27 @@
 } // END MEDIA QUERY 865 PX ----------------------------------------------
 
 @media (max-width: 775px) {
+
+
+  body {
+    font-size: 0.8rem;
+  }
+
+  h1 {
+    font-size: 3.1rem;
+  }
+
+  h2 {
+    font-size: 1.45rem;
+  }
+
+  h3 {
+    font-size: 1rem;
+  }
+
+
+
+  //INDEX
   .materialsFlexContainer {
     .wrapper {
       flex-direction: column-reverse;
@@ -371,6 +379,60 @@
       }
     }
   }
+
+
+  // BLOG
+  .comment2 {
+    margin-top: 70px;
+  }
+
+  .blogHeader {
+    padding-bottom: 260px;
+  }
+
+  .indexHeader {
+    padding-bottom: 390px;
+    background-position: center;
+  }
+
+  //CONTACT
+
+  form {
+    .formFlex {
+      input {
+        padding: 15px 20px;
+        font-size: 0.8rem; 
+      }
+    }
+  }
+
+  .contactInfo {
+    font-size: 0.82rem;
+    .contactIcons {
+      font-size: 1rem;
+    }
+  }
+
+  .contactFormContainer {
+    padding: 20px 35px;
+    margin: 0px;
+    height: 500px;
+    textarea {
+      padding: 25px;
+      margin: 0;
+    }
+  }
+
+  button.submit {
+    margin-top: 0;
+  }
+
+  // button {
+  //   font-size: smaller;
+  // }
+
+
+
 } // END MEDIA QUERY 775PX --------------------------
 
 @media (max-width: 655px) { 
@@ -380,6 +442,8 @@
       padding: 0px 25px;
     }
   } 
+
+
 } // END MEDIA QUERY 655 PX ----------------------------------------------
 
 

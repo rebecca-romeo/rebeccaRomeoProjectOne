@@ -267,8 +267,8 @@ button {
   margin-top: 20px;
 }
 button:hover, button:focus {
-  -webkit-transform: scale(1.1);
-          transform: scale(1.1);
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
   background-color: rgba(6, 86, 53, 0.9);
 }
 
@@ -500,7 +500,7 @@ form textarea::placeholder {
 .blogHeader {
   background-image: url(../assests/blog-image.jpg);
   background-size: cover;
-  background-position: center;
+  background-position: 30%;
   padding-bottom: 330px;
 }
 .blogHeader h1 {
@@ -931,14 +931,34 @@ footer {
   padding: 10px;
 }
 
-@media (max-width: 1280px) {
-  .blogTextContainer {
-    padding-top: 350px;
-  }
-}
-@media (max-width: 1190px) {
+@media (max-width: 1200px) {
   .blogTextContainer {
     padding-top: 300px;
+  }
+  .contactPage {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .contactFormContainer {
+    min-width: 98%;
+    position: relative;
+    left: 23px;
+  }
+  .contactInfo {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 100%;
+    font-size: 0.9rem;
   }
 }
 @media (max-width: 1100px) {
@@ -969,7 +989,7 @@ footer {
     visibility: hidden;
   }
   .blogHeader {
-    padding-bottom: 230px;
+    padding-bottom: 280px;
   }
   .materialsFlexContainer {
     padding: 80px 0;
@@ -1002,9 +1022,6 @@ footer {
   .indexGallery ul li {
     padding: 80px 0;
   }
-  .blogHeader {
-    background-position: left;
-  }
   .blogImgContainer {
     background-color: #F5F5F5;
     width: 100%;
@@ -1019,7 +1036,7 @@ footer {
             transform: translate(0, 0);
   }
   .blogImg {
-    width: 70%;
+    width: 85%;
     justify-self: center;
   }
   .blogMainFlex {
@@ -1091,57 +1108,15 @@ footer {
   .blogTextContainer {
     padding-top: 15px;
   }
-  .contactPage {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
-  .contactFormContainer {
-    min-width: 98%;
-    position: relative;
-    left: 23px;
-  }
-  .contactInfo {
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: reverse;
-        -ms-flex-direction: row-reverse;
-            flex-direction: row-reverse;
-    -webkit-box-pack: space-evenly;
-        -ms-flex-pack: space-evenly;
-            justify-content: space-evenly;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    width: 100%;
-    font-size: 0.9rem;
-  }
   .formFlex {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
     width: 100%;
   }
   .formFlex input {
-    min-width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    min-width: 40%;
     font-size: 0.9rem;
-  }
-  form input::-webkit-input-placeholder, form textarea::-webkit-input-placeholder {
-    opacity: 0.5;
-  }
-  form input::-moz-placeholder, form textarea::-moz-placeholder {
-    opacity: 0.5;
-  }
-  form input:-ms-input-placeholder, form textarea:-ms-input-placeholder {
-    opacity: 0.5;
-  }
-  form input::-ms-input-placeholder, form textarea::-ms-input-placeholder {
-    opacity: 0.5;
-  }
-  form input::placeholder,
-form textarea::placeholder {
-    opacity: 0.5;
   }
   button:hover, button:focus {
     -webkit-transform: scale(1.02);
@@ -1184,7 +1159,8 @@ form textarea::placeholder {
   header {
     padding-left: 0;
   }
-  h1 {
+  .blogHeader h1,
+.contactHeader h1 {
     text-align: center;
   }
   .indexSearchStyle .styleTextContainer {
@@ -1194,9 +1170,9 @@ form textarea::placeholder {
 .materialsFlexContainer {
     padding: 50px 0;
   }
-  .blogHeader {
-    background-position: left;
-    padding-bottom: 260px;
+  .blogImg {
+    -webkit-box-shadow: 20px 20px 0px 0px #F8FB05;
+            box-shadow: 20px 20px 0px 0px #F8FB05;
   }
   .contactHeader {
     padding-bottom: 250px;
@@ -1204,9 +1180,12 @@ form textarea::placeholder {
   .contactFormContainer {
     min-width: 98%;
     left: 23px;
+    padding: 30px 40px 40px;
+    height: 550px;
   }
-  .contactInfo {
-    font-size: 0.85rem;
+  .contactFormContainer {
+    -webkit-box-shadow: 20px 20px 0px -4px #F8FB05;
+            box-shadow: 20px 20px 0px -4px #F8FB05;
   }
   .asideImgContainer {
     display: none;
@@ -1218,6 +1197,18 @@ form textarea::placeholder {
   }
 }
 @media (max-width: 775px) {
+  body {
+    font-size: 0.8rem;
+  }
+  h1 {
+    font-size: 3.1rem;
+  }
+  h2 {
+    font-size: 1.45rem;
+  }
+  h3 {
+    font-size: 1rem;
+  }
   .materialsFlexContainer .wrapper {
     -webkit-box-orient: vertical;
     -webkit-box-direction: reverse;
@@ -1233,6 +1224,38 @@ form textarea::placeholder {
   }
   .materialsFlexContainer .wrapper .materialsImgContainer {
     margin-bottom: 50px;
+  }
+  .comment2 {
+    margin-top: 70px;
+  }
+  .blogHeader {
+    padding-bottom: 260px;
+  }
+  .indexHeader {
+    padding-bottom: 390px;
+    background-position: center;
+  }
+  form .formFlex input {
+    padding: 15px 20px;
+    font-size: 0.8rem;
+  }
+  .contactInfo {
+    font-size: 0.82rem;
+  }
+  .contactInfo .contactIcons {
+    font-size: 1rem;
+  }
+  .contactFormContainer {
+    padding: 20px 35px;
+    margin: 0px;
+    height: 500px;
+  }
+  .contactFormContainer textarea {
+    padding: 25px;
+    margin: 0;
+  }
+  button.submit {
+    margin-top: 0;
   }
 }
 @media (max-width: 655px) {
