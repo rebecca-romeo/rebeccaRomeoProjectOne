@@ -315,7 +315,12 @@
   h1 {
     font-size: 3.1rem;
     text-align: center;
-    padding-left: 0;
+  }
+
+  .indexHeader {
+    h1 {
+      padding: 0;
+    }
   }
 
   .blogHeader {
@@ -631,6 +636,17 @@ form.contactFormContainer {
 @media (max-width: 470px) {
   /* all of our styles for MOBILE devices will go within this breakpoint */
 
+  h1 {
+    font-size: 2.4rem;
+  }
+
+  .navBar {
+
+    .logo {
+      font-size: 0.9rem;
+    }
+  }
+
   .contactInfo {
     line-height: 1.5rem;
   }
@@ -658,5 +674,11 @@ form.contactFormContainer {
     padding: 0 25px 25px;
   }
 
+
+  .navBar {
+      li {
+        padding: 0px 15px;
+      } 
+  }
 
 }
