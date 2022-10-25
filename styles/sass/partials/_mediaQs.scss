@@ -621,6 +621,10 @@ form.contactFormContainer {
   }
 }
 
+.contactFormContainer {
+  padding: 0 25px 25px;
+}
+
 .commentSection {
   padding: 0 20px;
 }
@@ -629,6 +633,11 @@ form.contactFormContainer {
   padding: 0 30px;
 }
 
+
+.mission {
+  width: 70%;
+  padding-left: 35px;
+}
 // -------------------------
 
 
@@ -670,10 +679,6 @@ form.contactFormContainer {
     }
   }
 
-  .contactFormContainer {
-    padding: 0 25px 25px;
-  }
-
 
   .navBar {
       li {
@@ -681,4 +686,22 @@ form.contactFormContainer {
       } 
   }
 
+  form {
+    .formFlex {
+      input {
+        padding: 15px 5px;
+        font-size: 0.7rem; 
+      }
+    }
+  }
+}
+
+@media (max-width: 410px) {
+
+  .mission {
+    padding-bottom: 0;
+    width: 100%;
+    padding-left: 0px;
+    text-align: center;
+  }
 }

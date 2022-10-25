@@ -1372,12 +1372,21 @@ form.contactFormContainer textarea {
   padding-right: 0;
 }
 
+.contactFormContainer {
+  padding: 0 25px 25px;
+}
+
 .commentSection {
   padding: 0 20px;
 }
 
 .blogArticle {
   padding: 0 30px;
+}
+
+.mission {
+  width: 70%;
+  padding-left: 35px;
 }
 
 @media (max-width: 470px) {
@@ -1404,10 +1413,19 @@ form.contactFormContainer textarea {
   .indexGallery ul li {
     margin: 10px;
   }
-  .contactFormContainer {
-    padding: 0 25px 25px;
-  }
   .navBar li {
     padding: 0px 15px;
+  }
+  form .formFlex input {
+    padding: 15px 5px;
+    font-size: 0.7rem;
+  }
+}
+@media (max-width: 410px) {
+  .mission {
+    padding-bottom: 0;
+    width: 100%;
+    padding-left: 0px;
+    text-align: center;
   }
 }
