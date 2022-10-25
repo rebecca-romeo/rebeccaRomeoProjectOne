@@ -683,7 +683,6 @@ form textarea::placeholder {
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: flex-end;
-  border: 2px solid lightskyblue;
   -webkit-transform: translate(-110px, 0px);
           transform: translate(-110px, 0px);
   position: relative;
@@ -707,7 +706,6 @@ form textarea::placeholder {
 }
 .blogTextContainer p {
   padding: 10px 0;
-  border: 1px solid plum;
 }
 .blogTextContainer h2 {
   padding-top: 50px;
@@ -721,7 +719,6 @@ form textarea::placeholder {
 }
 
 .commentSection {
-  border: 2px solid blue;
   padding-bottom: 70px;
   padding-left: 100px;
 }
@@ -735,7 +732,6 @@ form textarea::placeholder {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  border: 2px solid red;
 }
 
 .comment2 {
