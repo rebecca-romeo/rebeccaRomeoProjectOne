@@ -1288,6 +1288,7 @@ footer {
   }
   .blogHeader {
     padding-bottom: 250px;
+    background-position: 30%;
   }
   .asideTextContainer {
     padding: 0px 15px;
@@ -1345,7 +1346,7 @@ form.contactFormContainer textarea {
 @media (max-width: 550px) {
   .blogHeader {
     padding-bottom: 250px;
-    background-position: 25%;
+    background-position: 40%;
   }
   h2 {
     font-size: 1.2rem;
