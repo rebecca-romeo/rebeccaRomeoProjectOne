@@ -482,7 +482,6 @@ form textarea::placeholder {
 }
 .indexHeader .blueChairsContainer {
   position: absolute;
-  border: 2px solid green;
   -webkit-transform: translate(-260px, 55px);
           transform: translate(-260px, 55px);
   display: -webkit-box;
@@ -865,9 +864,6 @@ form textarea::placeholder {
   -webkit-transform: scale(1.2);
           transform: scale(1.2);
 }
-.contactInfo .contactEmail {
-  padding: 25px 0 45px;
-}
 .contactInfo .contactEmail:hover, .contactInfo .contactEmail:focus {
   -webkit-transform: scale(1.03);
           transform: scale(1.03);
@@ -992,6 +988,7 @@ footer {
     position: static;
     -webkit-transform: translate(0, 0);
             transform: translate(0, 0);
+    padding-top: 40px;
   }
   .blogImg {
     width: 85%;

@@ -3,21 +3,17 @@
 // Contact information styles
 
 .contactInfo {
-  // border: 2px solid blue;
   color: v.$evergreen;
   width: 25%;
   display: flex;
   flex-direction: column;
-  // align-items: flex-end;
   justify-content: center;
   transform: translateY(-65px);
   .contactIcons {
     display: flex;
     font-size: 1.2rem;
-    // border: 2px solid pink;
     .fa-brands {
       padding-right: 25px;
-      // border: 2px solid lightgreen;
       &:hover,
       &:focus {
         transform: scale(1.2);
@@ -25,8 +21,6 @@
     }
   }
   .contactEmail {
-    padding: 25px 0 45px;
-    // border: 1px solid cyan;
     &:hover,
     &:focus {
       transform: scale(1.03);

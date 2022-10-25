@@ -5,10 +5,8 @@
   flex-wrap: wrap;
   justify-content: space-between;
   padding: 100px 0;
-  // border: 5px solid blue;
   .iconsTextContainer {
     width: 50%;
-    // border: 5px solid red;
     .indexIconImg {
       text-align: center;
       line-height: 25px;
@@ -36,19 +34,14 @@
 .iconsMarginBottom {
   margin-bottom: 60px;
 }
-// ask about how to do this in flex
 
 .iconsTextContainer {
   display: flex;
-  // flex-direction: column;
   .flextest {
     width: 10%;
-    // border: 2px solid pink;
-    // align-self: center;
   }
   .flextest2 {
     width: 90%;
-    // border: 2px solid lightblue;
     padding-left: 10px;
   }
 }
