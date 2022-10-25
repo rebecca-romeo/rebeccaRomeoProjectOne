@@ -170,8 +170,9 @@
   }
 
   .asideImg {
-    box-shadow: -10 -10 0 -4 yellow;
-    border-left: 10px solid yellow;
+    box-shadow: none;
+    border-left: 10px solid v.$brightYellow;
+    border-bottom: 10px solid v.$brightYellow;
   }
 
   .mission {
@@ -228,6 +229,20 @@
     font-size: 0.7rem;
     padding: 5px;
   }
+
+  // .materialsFlexContainer { 
+  //   .wrapper {
+      // align-items: center;
+      // justify-content: center;
+      // align-self: flex-start;
+  //   }
+  // }
+
+  .materialsImgContainer {
+    align-self: center;
+  }
+
+  
 } // END MEDIA QUERY 1100 PX ----------------------------------------------
 @media (max-width: 940px) {
   h3 {
@@ -238,11 +253,8 @@
   display: none;
 }
 
-.materialsFlexContainer {
+.materialsFlexContainer { 
   .wrapper {
-    // align-items: center;
-    // justify-content: center;
-    // align-self: flex-start;
     .materialsTextContainer {
       margin-right: 0;
       align-items: center;
@@ -251,7 +263,6 @@
         margin-bottom: 15px;
       }
     }
-
   }
 }
 

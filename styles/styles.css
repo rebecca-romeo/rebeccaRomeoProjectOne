@@ -1090,9 +1090,10 @@ footer {
     font-size: 0.85rem;
   }
   .asideImg {
-    -webkit-box-shadow: -10 -10 0 -4 yellow;
-            box-shadow: -10 -10 0 -4 yellow;
-    border-left: 10px solid yellow;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    border-left: 10px solid #F8FB05;
+    border-bottom: 10px solid #F8FB05;
   }
   .mission {
     padding-bottom: 0;
@@ -1132,6 +1133,10 @@ footer {
   footer {
     font-size: 0.7rem;
     padding: 5px;
+  }
+  .materialsImgContainer {
+    -ms-flex-item-align: center;
+        align-self: center;
   }
 }
 @media (max-width: 940px) {
