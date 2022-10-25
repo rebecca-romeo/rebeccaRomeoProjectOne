@@ -75,6 +75,10 @@
     padding: 80px 0;
   }
 
+  .materialsImgContainer {
+    align-self: flex-start;
+  }
+
   .indexIconsSection {
     flex-direction: column;
     justify-content: space-between;
@@ -82,6 +86,12 @@
 
     .iconsTextContainer {
       width: 85%;
+    }
+  }
+
+  .indexIconsSection {
+    h2 {
+      margin-bottom: 10px;
     }
   }
 
@@ -98,7 +108,7 @@
   
     .indexIconsSection,
     .materialsFlexContainer  {
-      padding: 60px 0;
+      padding: 70px 0;
     }
 
     .indexGallery {
@@ -224,6 +234,36 @@
   font-size: 1.1rem;
 }
 
+.materialsImgContainer {
+  display: none;
+}
+
+.materialsFlexContainer {
+  .wrapper {
+    // align-items: center;
+    // justify-content: center;
+    // align-self: flex-start;
+    .materialsTextContainer {
+      margin-right: 0;
+      align-items: center;
+      text-align: center;
+      p {
+        margin-bottom: 15px;
+      }
+    }
+
+  }
+}
+
+.indexSearchStyle {
+  .styleTextContainer {
+    padding: 70px 0;
+  }
+  }
+
+
+
+
 .asideTextContainer {
   font-size: 0.8rem;
 
@@ -235,29 +275,6 @@
 
 }
 
-// @media (max-width: 800px) {
-//   .asideTextContainer {
-//     flex-direction: column;
-//     width: 90%;
-//     padding-left: 20px;
-//     justify-content: space-evenly;
-//     font-size: 0.8rem;
-
-//   }
-
-//   .asideImgContainer {
-//     width: 100%; 
-//   }
-
-//   .mission {
-//     width: 100%;
-//     padding-right: 0px;
-//   }
-// }
-
-// h3 {
-//   font-size: 1.1rem;
-// }
 
 @media (max-width: 865px) {
   /* all of our styles for TABLET devices will go within this breakpoint */
@@ -281,35 +298,32 @@
     position: absolute;
   }
 
-  header {
+  h1 {
+    text-align: center;
     padding-left: 0;
   }
 
-    .blogHeader,
-    .contactHeader {
-      h1 {
-        text-align: center;
-      }
-    }
-
-
-
-  // INDEX
-  .indexSearchStyle {
-  .styleTextContainer {
-    padding: 70px 0;
-  }
+  .blogHeader {
+    padding-bottom: 260px;
   }
 
-  .indexIconsSection,
-  .materialsFlexContainer  {
-    padding: 50px 0;
+  .indexHeader {
+    margin-top: 15px;
   }
+
 
   //BLOG 
   .blogImg {
     box-shadow:  20px 20px 0px 0px v.$brightYellow;
   }
+
+  .asideImgContainer {
+    display: none;
+  }
+  .asideTextContainer {
+    justify-content: space-evenly;
+  }
+
 
 
   // CONTACT
@@ -325,17 +339,8 @@
     height: 550px;
   }
 
-
   .contactFormContainer {
     box-shadow: 20px 20px 0px -4px v.$brightYellow;
-  }
-
-
-  .asideImgContainer {
-    display: none;
-  }
-  .asideTextContainer {
-    justify-content: space-evenly;
   }
 
 
@@ -346,6 +351,7 @@
 
   body {
     font-size: 0.8rem;
+    line-height: 1.5rem;
   }
 
   h1 {
@@ -353,7 +359,8 @@
   }
 
   h2 {
-    font-size: 1.45rem;
+    font-size: 1.4rem;
+    line-height: 2rem;
   }
 
   h3 {
@@ -361,21 +368,16 @@
   }
 
 
-
-  //INDEX
-  .materialsFlexContainer {
-    .wrapper {
-      flex-direction: column-reverse;
-
-      .materialsTextContainer {
-        width: 100%;
-        margin-right: 0;
-        align-items: center;
-      }
-      .materialsImgContainer {
-        // width: 80%;
-        margin-bottom: 50px;
-
+  .indexGallery {
+    ul {
+      flex-direction: column;
+      justify-content: space-evenly;
+      align-items: center;
+      padding: 40px 0;
+      li {
+        width: 45%;
+        margin: 20px;
+        padding: 0;
       }
     }
   }
@@ -391,9 +393,11 @@
   }
 
   .indexHeader {
-    padding-bottom: 390px;
+    padding-bottom: 380px;
     background-position: center;
   }
+
+
 
   //CONTACT
 
@@ -423,14 +427,13 @@
     }
   }
 
+  button {
+    margin-top: 10px;
+  }
+
   button.submit {
     margin-top: 0;
   }
-
-  // button {
-  //   font-size: smaller;
-  // }
-
 
 
 } // END MEDIA QUERY 775PX --------------------------

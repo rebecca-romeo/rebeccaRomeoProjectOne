@@ -994,6 +994,10 @@ footer {
   .materialsFlexContainer {
     padding: 80px 0;
   }
+  .materialsImgContainer {
+    -ms-flex-item-align: start;
+        align-self: flex-start;
+  }
   .indexIconsSection {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -1009,6 +1013,9 @@ footer {
   .indexIconsSection .iconsTextContainer {
     width: 85%;
   }
+  .indexIconsSection h2 {
+    margin-bottom: 10px;
+  }
   .iconsMarginBottom {
     margin-bottom: 30px;
   }
@@ -1017,7 +1024,7 @@ footer {
   }
   .indexIconsSection,
 .materialsFlexContainer {
-    padding: 60px 0;
+    padding: 70px 0;
   }
   .indexGallery ul li {
     padding: 80px 0;
@@ -1131,6 +1138,22 @@ footer {
   h3 {
     font-size: 1.1rem;
   }
+  .materialsImgContainer {
+    display: none;
+  }
+  .materialsFlexContainer .wrapper .materialsTextContainer {
+    margin-right: 0;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: center;
+  }
+  .materialsFlexContainer .wrapper .materialsTextContainer p {
+    margin-bottom: 15px;
+  }
+  .indexSearchStyle .styleTextContainer {
+    padding: 70px 0;
+  }
   .asideTextContainer {
     font-size: 0.8rem;
   }
@@ -1156,23 +1179,27 @@ footer {
   .homeLogo {
     position: absolute;
   }
-  header {
+  h1 {
+    text-align: center;
     padding-left: 0;
   }
-  .blogHeader h1,
-.contactHeader h1 {
-    text-align: center;
+  .blogHeader {
+    padding-bottom: 260px;
   }
-  .indexSearchStyle .styleTextContainer {
-    padding: 70px 0;
-  }
-  .indexIconsSection,
-.materialsFlexContainer {
-    padding: 50px 0;
+  .indexHeader {
+    margin-top: 15px;
   }
   .blogImg {
     -webkit-box-shadow: 20px 20px 0px 0px #F8FB05;
             box-shadow: 20px 20px 0px 0px #F8FB05;
+  }
+  .asideImgContainer {
+    display: none;
+  }
+  .asideTextContainer {
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
   }
   .contactHeader {
     padding-bottom: 250px;
@@ -1187,43 +1214,39 @@ footer {
     -webkit-box-shadow: 20px 20px 0px -4px #F8FB05;
             box-shadow: 20px 20px 0px -4px #F8FB05;
   }
-  .asideImgContainer {
-    display: none;
-  }
-  .asideTextContainer {
-    -webkit-box-pack: space-evenly;
-        -ms-flex-pack: space-evenly;
-            justify-content: space-evenly;
-  }
 }
 @media (max-width: 775px) {
   body {
     font-size: 0.8rem;
+    line-height: 1.5rem;
   }
   h1 {
     font-size: 3.1rem;
   }
   h2 {
-    font-size: 1.45rem;
+    font-size: 1.4rem;
+    line-height: 2rem;
   }
   h3 {
     font-size: 1rem;
   }
-  .materialsFlexContainer .wrapper {
+  .indexGallery ul {
     -webkit-box-orient: vertical;
-    -webkit-box-direction: reverse;
-        -ms-flex-direction: column-reverse;
-            flex-direction: column-reverse;
-  }
-  .materialsFlexContainer .wrapper .materialsTextContainer {
-    width: 100%;
-    margin-right: 0;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    padding: 40px 0;
   }
-  .materialsFlexContainer .wrapper .materialsImgContainer {
-    margin-bottom: 50px;
+  .indexGallery ul li {
+    width: 45%;
+    margin: 20px;
+    padding: 0;
   }
   .comment2 {
     margin-top: 70px;
@@ -1232,7 +1255,7 @@ footer {
     padding-bottom: 260px;
   }
   .indexHeader {
-    padding-bottom: 390px;
+    padding-bottom: 380px;
     background-position: center;
   }
   form .formFlex input {
@@ -1253,6 +1276,9 @@ footer {
   .contactFormContainer textarea {
     padding: 25px;
     margin: 0;
+  }
+  button {
+    margin-top: 10px;
   }
   button.submit {
     margin-top: 0;
