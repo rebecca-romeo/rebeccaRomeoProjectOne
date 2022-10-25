@@ -723,6 +723,7 @@ form textarea::placeholder {
 .commentSection {
   border: 2px solid blue;
   padding-bottom: 70px;
+  padding-left: 100px;
 }
 .commentSection h2 {
   padding: 50px 0 30px;
@@ -1301,6 +1302,9 @@ footer {
     padding: 0px 15px;
     font-size: 0.7rem;
   }
+  .commentSection {
+    padding: 0 25px;
+  }
   .contactFormContainer {
     min-width: 100%;
     left: 25px;
@@ -1379,10 +1383,6 @@ form.contactFormContainer textarea {
 
 .contactFormContainer {
   padding: 0 25px 25px;
-}
-
-.commentSection {
-  padding: 0 20px;
 }
 
 .mission {
