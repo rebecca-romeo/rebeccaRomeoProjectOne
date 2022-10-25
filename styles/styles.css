@@ -475,7 +475,6 @@ form textarea::placeholder {
   background-size: cover;
   background-position: right;
   position: relative;
-  height: auto;
 }
 .indexHeader h1 {
   padding-top: 10px;
@@ -500,7 +499,7 @@ form textarea::placeholder {
 .blogHeader {
   background-image: url(../assests/blog-image.jpg);
   background-size: cover;
-  background-position: 30%;
+  background-position: 15%;
   padding-bottom: 330px;
 }
 .blogHeader h1 {
@@ -510,7 +509,7 @@ form textarea::placeholder {
 .contactHeader {
   background: url(../assests/contact-image.jpg) no-repeat center;
   background-size: cover;
-  height: auto;
+  background-position: 20%;
   padding-bottom: 280px;
 }
 .contactHeader h1 {
@@ -634,56 +633,6 @@ form textarea::placeholder {
 .iconsTextContainer .flextest2 {
   width: 90%;
   padding-left: 10px;
-}
-
-.indexProgramsSection {
-  background-color: #E0FDDF;
-  padding-top: 100px;
-  padding-bottom: 80px;
-}
-
-.programsFlexContainer {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
-
-.locationSection {
-  border: 2px solid orange;
-  width: 44%;
-  -ms-flex-item-align: end;
-      align-self: flex-end;
-  text-align: right;
-  position: relative;
-}
-.locationSection .locationImgContainer {
-  position: absolute;
-  top: -140px;
-  left: -140px;
-  width: calc(100% + 9vw);
-}
-.locationSection .locationImgContainer img {
-  -webkit-box-shadow: 30px 30px 0px -4px #F8FB05;
-          box-shadow: 30px 30px 0px -4px #F8FB05;
-}
-
-.programSection {
-  width: 41%;
-  position: relative;
-}
-.programSection .programImgContainer {
-  border: 2px solid magenta;
-  position: absolute;
-  bottom: -110px;
-  left: -30px;
-  width: calc(100% + 7.3vw);
-}
-.programSection .programImgContainer img {
-  -webkit-box-shadow: -30px 30px 0px -4px #F8FB05;
-          box-shadow: -30px 30px 0px -4px #F8FB05;
 }
 
 .indexSearchStyle .styleTextContainer {
@@ -944,7 +893,9 @@ footer {
   .contactFormContainer {
     min-width: 98%;
     position: relative;
-    left: 23px;
+    left: 35px;
+    -webkit-box-shadow: none;
+            box-shadow: none;
   }
   .contactInfo {
     -webkit-box-orient: horizontal;
@@ -1073,11 +1024,10 @@ footer {
             transform: translate(0, 0);
     position: static;
     padding-bottom: 10px;
-    background-color: #F5F5F5;
+    background-color: #E0FDDF;
   }
   .asideImgContainer {
     width: 45%;
-    background-color: #F5F5F5;
   }
   .asideTextContainer {
     display: -webkit-box;
@@ -1174,6 +1124,9 @@ footer {
         -ms-flex-direction: column;
             flex-direction: column;
   }
+  .navBar .logo {
+    font-size: 1rem;
+  }
   .navBar ul .contactLi {
     padding-right: 25px;
   }
@@ -1185,11 +1138,16 @@ footer {
     position: absolute;
   }
   h1 {
+    font-size: 3.1rem;
     text-align: center;
     padding-left: 0;
   }
   .blogHeader {
     padding-bottom: 260px;
+    background-position: 20%;
+  }
+  header {
+    padding-left: 0;
   }
   .indexHeader {
     margin-top: 15px;
@@ -1205,28 +1163,27 @@ footer {
     -webkit-box-pack: space-evenly;
         -ms-flex-pack: space-evenly;
             justify-content: space-evenly;
+    padding: 0 35px;
+  }
+  .blogArticle,
+.commentSection {
+    padding: 0 55px;
   }
   .contactHeader {
     padding-bottom: 250px;
   }
   .contactFormContainer {
     min-width: 98%;
-    left: 23px;
+    left: 35px;
+    top: 50px;
     padding: 30px 40px 40px;
     height: 550px;
-  }
-  .contactFormContainer {
-    -webkit-box-shadow: 20px 20px 0px -4px #F8FB05;
-            box-shadow: 20px 20px 0px -4px #F8FB05;
   }
 }
 @media (max-width: 775px) {
   body {
     font-size: 0.8rem;
     line-height: 1.5rem;
-  }
-  h1 {
-    font-size: 3.1rem;
   }
   h2 {
     font-size: 1.4rem;
@@ -1249,7 +1206,7 @@ footer {
     padding: 40px 0;
   }
   .indexGallery ul li {
-    width: 45%;
+    width: 50%;
     margin: 20px;
     padding: 0;
   }
@@ -1257,11 +1214,18 @@ footer {
     margin-top: 70px;
   }
   .blogHeader {
-    padding-bottom: 260px;
+    background-position: 20% 0%;
   }
   .indexHeader {
-    padding-bottom: 380px;
-    background-position: center;
+    padding-bottom: 400px;
+    background-position: 50% 0%;
+  }
+  .blogArticle,
+.commentSection {
+    padding: 0 45px;
+  }
+  .asideTextContainer {
+    padding: 0 30px;
   }
   form .formFlex input {
     padding: 15px 20px;
@@ -1296,7 +1260,146 @@ footer {
   .headerNav li {
     padding: 0px 25px;
   }
+  h1 {
+    font-size: 2.7rem;
+  }
+  h3 {
+    font-size: 0.9rem;
+  }
+  .contactHeader {
+    padding-bottom: 200px;
+  }
+  .contactHeader h1 {
+    margin-top: 100px;
+  }
+  .iconsTextContainer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .iconsTextContainer .flextest {
+    width: 15%;
+  }
+  .iconsTextContainer .flextest2 {
+    width: 80%;
+    padding-left: 10px;
+  }
+  .indexSearchStyle .styleTextContainer {
+    text-align: center;
+  }
+  .indexSearchStyle .styleTextContainer p {
+    text-align: center;
+  }
+  .blogHeader {
+    padding-bottom: 200px;
+  }
+  .asideTextContainer {
+    padding: 0px 15px;
+    font-size: 0.7rem;
+  }
+  .contactFormContainer {
+    min-width: 100%;
+    left: 25px;
+    top: 90px;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+  }
+  .contactFormContainer {
+    padding: 0 40px 25px;
+    height: 400px;
+  }
+  .contactInfo {
+    font-size: 0.75rem;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    text-align: center;
+    margin-top: 40px;
+  }
+  .contactInfo .contactEmail {
+    border-bottom: 5px solid yellow;
+    margin-bottom: 15px;
+    padding: 25px 0 20px;
+  }
+  .contactInfo .contactIcons .fa-whatsapp {
+    padding-right: 0px;
+  }
+  button.commentButton {
+    font-size: 0.7rem;
+  }
+  button.submit {
+    margin-top: 15px;
+  }
+  form .formFlex {
+    margin: 10px 0;
+  }
+  form .formFlex input {
+    margin-bottom: 10px;
+    font-size: 0.7rem;
+  }
+  form.blogForm textarea,
+form.contactFormContainer textarea {
+    font-size: 0.7rem;
+  }
+  .iconsTextContainer .flexTest2 {
+    margin-left: 20px;
+  }
 }
-@media (max-width: 500px) {
+@media (max-width: 550px) {
+  .blogHeader {
+    padding-bottom: 170px;
+    background-position: 25%;
+  }
+  h2 {
+    font-size: 1.2rem;
+  }
+  body {
+    font-size: 0.7rem;
+    line-height: 1.4rem;
+  }
+}
+.asideTextContainer {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-bottom: 30px;
+}
+.asideTextContainer .mission {
+  padding-right: 0;
+}
+
+.commentSection {
+  padding: 0 20px;
+}
+
+.blogArticle {
+  padding: 0 30px;
+}
+
+@media (max-width: 470px) {
   /* all of our styles for MOBILE devices will go within this breakpoint */
+  .contactInfo {
+    line-height: 1.5rem;
+  }
+  .styleTextContainer.wrapper {
+    padding: 50px 0;
+  }
+  .indexIconsSection,
+.materialsFlexContainer {
+    padding: 50px 0;
+  }
+  .indexGallery ul {
+    padding: 40px 0;
+  }
+  .indexGallery ul li {
+    margin: 10px;
+  }
+  .contactFormContainer {
+    padding: 0 25px 25px;
+  }
 }

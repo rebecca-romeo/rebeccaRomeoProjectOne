@@ -18,7 +18,9 @@
   .contactFormContainer {
     min-width: 98%;
     position: relative;
-    left: 23px;
+    left: 35px;
+    box-shadow: none;
+
   }
 
   .contactInfo {
@@ -154,12 +156,11 @@
     transform: translate(0, 0);
     position: static;
     padding-bottom: 10px;
-    background-color: v.$white;
+    background-color: v.$ice;
   }
 
   .asideImgContainer {
     width: 45%;
-    background-color: v.$white;
   }
 
   .asideTextContainer {
@@ -188,7 +189,6 @@
   span {
     border-bottom: 5px solid v.$brightYellow;
   }
-  
 
 
   .blogArticle {
@@ -293,6 +293,9 @@
   // NAV BAR
   .navBar {
     flex-direction: column;
+    .logo {
+      font-size: 1rem;
+    }
     ul {
       .contactLi {
         padding-right: 25px;
@@ -310,12 +313,18 @@
   }
 
   h1 {
+    font-size: 3.1rem;
     text-align: center;
     padding-left: 0;
   }
 
   .blogHeader {
     padding-bottom: 260px;
+    background-position: 20%;
+  }
+
+  header {
+    padding-left: 0;
   }
 
   .indexHeader {
@@ -333,9 +342,13 @@
   }
   .asideTextContainer {
     justify-content: space-evenly;
+    padding: 0 35px;
   }
 
-
+  .blogArticle,
+  .commentSection {
+    padding: 0 55px;
+  }
 
   // CONTACT
 
@@ -345,14 +358,12 @@
 
   .contactFormContainer {
     min-width: 98%;
-    left: 23px;
+    left: 35px;
+    top: 50px;
     padding: 30px 40px 40px;
     height: 550px;
   }
 
-  .contactFormContainer {
-    box-shadow: 20px 20px 0px -4px v.$brightYellow;
-  }
 
 
 } // END MEDIA QUERY 865 PX ----------------------------------------------
@@ -365,10 +376,6 @@
     line-height: 1.5rem;
   }
 
-  h1 {
-    font-size: 3.1rem;
-  }
-
   h2 {
     font-size: 1.4rem;
     line-height: 2rem;
@@ -378,7 +385,6 @@
     font-size: 1rem;
   }
 
-
   .indexGallery {
     ul {
       flex-direction: column;
@@ -386,7 +392,7 @@
       align-items: center;
       padding: 40px 0;
       li {
-        width: 45%;
+        width: 50%;
         margin: 20px;
         padding: 0;
       }
@@ -400,13 +406,23 @@
   }
 
   .blogHeader {
-    padding-bottom: 260px;
+    background-position: 20% 0%;
   }
 
   .indexHeader {
-    padding-bottom: 380px;
-    background-position: center;
+    padding-bottom: 400px;
+    background-position: 50% 0%;
   }
+
+  .blogArticle,
+  .commentSection {
+    padding: 0 45px;
+  }
+
+  .asideTextContainer {
+    padding: 0 30px;
+  }
+
 
 
 
@@ -457,15 +473,194 @@
     }
   } 
 
+  h1 {
+    font-size: 2.7rem;
+  }
+
+  h3 {
+    font-size: 0.9rem;
+  }
+  .contactHeader {
+    padding-bottom: 200px;
+    h1 {
+      margin-top: 100px;
+    }
+  }
+
+  // index
+  .iconsTextContainer {
+    display: flex;
+    // flex-direction: column;
+    .flextest {
+      width: 15%;
+      // border: 2px solid pink;
+      // align-self: center;
+    }
+    .flextest2 {
+      width: 80%;
+      // border: 2px solid lightblue;
+      padding-left: 10px;
+    }
+  }
+
+  .indexSearchStyle {
+    .styleTextContainer {
+      text-align: center;
+      p {
+        text-align: center;
+      }
+    }
+  }
+
+  
+
+
+  // blog
+
+  .blogHeader {
+    padding-bottom: 200px;
+  }
+
+  .asideTextContainer {
+    padding: 0px 15px;
+    font-size: 0.7rem;
+  }
+
+  // contact
+
+  .contactFormContainer {
+    min-width: 100%;
+    left: 25px;
+    top: 90px;
+    box-shadow: none;
+  }
+
+  .contactFormContainer {
+    padding: 0 40px 25px;
+    height: 400px;
+
+  }
+
+  .contactInfo {
+    font-size: 0.75rem;
+    flex-direction: column;
+    text-align: center;
+    margin-top: 40px;
+    .contactEmail {
+      border-bottom: 5px solid yellow;
+      margin-bottom: 15px;
+      padding: 25px 0 20px;
+    }
+    .contactIcons {
+      .fa-whatsapp {
+        padding-right: 0px;
+      }
+    }
+  }
+
+
+  button.commentButton {
+    font-size: 0.7rem;
+  }
+
+  button.submit {
+    margin-top: 15px;
+  }
+
+form {
+  .formFlex {
+    margin: 10px 0;
+    input {
+      margin-bottom: 10px;
+      font-size: 0.7rem;
+    }
+  }
+}
+
+form.blogForm,
+form.contactFormContainer {
+  textarea {
+    font-size: 0.7rem;
+  }
+}
+
+.iconsTextContainer {
+  .flexTest2 {
+    margin-left: 20px;
+  }
+}
+
 
 } // END MEDIA QUERY 655 PX ----------------------------------------------
 
 
+@media (max-width: 550px) {
+
+  .blogHeader {
+    padding-bottom: 170px;
+    background-position: 25%;
+  }
+
+  h2 {
+    font-size: 1.2rem;
+  }
+
+  body {
+    font-size: 0.7rem;
+    line-height: 1.4rem;
+  }
+}
+
+.asideTextContainer {
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 30px;
+  .mission {
+    padding-right: 0;
+  }
+}
+
+.commentSection {
+  padding: 0 20px;
+}
+
+.blogArticle {
+  padding: 0 30px;
+}
+
+// -------------------------
 
 
 
-
-
-@media (max-width: 500px) {
+@media (max-width: 470px) {
   /* all of our styles for MOBILE devices will go within this breakpoint */
+
+  .contactInfo {
+    line-height: 1.5rem;
+  }
+
+  .styleTextContainer.wrapper {
+    padding: 50px 0;
+  }
+
+  .indexIconsSection,
+  .materialsFlexContainer {
+    padding: 50px 0;
+  }
+
+
+  .indexGallery {
+    ul {
+      padding: 40px 0;
+      li {
+        margin: 10px;
+      }
+    }
+  }
+
+  .contactFormContainer {
+    padding: 0 25px 25px;
+  }
+
+
 }

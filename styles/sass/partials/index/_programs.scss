@@ -1,46 +1,82 @@
-@use "../variables" as v;
+// @use "../variables" as v;
 
-.indexProgramsSection {
-  background-color: v.$ice;
-  padding-top: 100px;
-  padding-bottom: 80px; 
-  // position: relative;
-}
+// .indexProgramsSection {
+//   background-color: v.$ice;
+//   padding-top: 100px;
+//   padding-bottom: 80px; 
+//   // position: relative;
+// }
 
-.programsFlexContainer {
-  display: flex;
-  justify-content: space-between;
-}
+// .programsFlexContainer {
+//   display: flex;
+//   justify-content: space-between;
+// }
 
-.locationSection {
-  border: 2px solid orange;
-  width: 44%;
-  align-self: flex-end;
-  text-align: right;
-  position: relative;
-  .locationImgContainer {
-    position: absolute;
-    top: -140px;
-    left: -140px;
-    width: calc(100% + 9vw);
-    img {
-      box-shadow: 30px 30px 0px -4px v.$brightYellow;
-    }
-  }
-}
+// .locationSection {
+//   border: 2px solid orange;
+//   width: 44%;
+//   align-self: flex-end;
+//   text-align: right;
+//   position: relative;
+//   .locationImgContainer {
+//     position: absolute;
+//     top: -140px;
+//     left: -140px;
+//     width: calc(100% + 9vw);
+//     img {
+//       box-shadow: 30px 30px 0px -4px v.$brightYellow;
+//     }
+//   }
+// }
 
-.programSection {
-  width: 41%;
-  position: relative;
-  .programImgContainer {
-    border: 2px solid magenta;
-    position: absolute;
-    bottom: -110px;
-    left: -30px;
-    // width: 600px;
-    width: calc(100% + 7.3vw);
-    img {
-      box-shadow: -30px 30px 0px -4px v.$brightYellow;
-    }
-  }
-}
+// .programSection {
+//   width: 41%;
+//   position: relative;
+//   .programImgContainer {
+//     border: 2px solid magenta;
+//     position: absolute;
+//     bottom: -110px;
+//     left: -30px;
+//     // width: 600px;
+//     width: calc(100% + 7.3vw);
+//     img {
+//       box-shadow: -30px 30px 0px -4px v.$brightYellow;
+//     }
+//   }
+// }
+
+
+
+/// HTML 
+/// 
+///     <!-- SECTION: PROGRAMS & LOCATIONS -->
+// <section class="indexProgramsSection">
+// <div class="programsFlexContainer wrapper">
+  
+//   <!-- New Locations -->
+//   <div class="locationSection">
+//     <div class="locationImgContainer">
+//       <img src="./assests/left-image.jpg" alt="">
+//     </div> <!-- END .locationImgContainer -->
+//     <div class="locationTextContainer">
+//       <h2>New locations</h2>
+//       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In et risus nex orci ornare condimentum. Nam suscipit odio lorem, id vestibulum lacus tristique eu. Sed urna ex.</p>
+//       <button>Read more</button>
+//     </div> <!-- END .locationTextContainer -->
+//   </div><!-- END .locationSection -->
+
+
+//   <!-- Group Programs -->
+//   <div class="programSection">
+//     <div class="programTextContainer">
+//       <h2>Group programs</h2>
+//       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In et risus nex orci ornare condimentum. Nam suscipit odio lorem, id vestibulum lacus tristique eu. Sed urna ex.</p>
+//       <button>Read more</button>
+//     </div> <!-- END .programTextContainer --> 
+//     <div class="programImgContainer">
+//       <img src="./assests/right-image.jpg" alt="">
+//     </div><!-- END .programImgContainer --> 
+//   </div><!-- END .programSection-->
+  
+// </div><!-- END .programsFlexContainer and .wrapper -->
+// </section><!-- END .indexProgramsSection -->
