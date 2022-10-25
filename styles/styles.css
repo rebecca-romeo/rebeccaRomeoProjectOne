@@ -868,7 +868,7 @@ form textarea::placeholder {
           transform: scale(1.2);
 }
 .contactInfo .contactEmail {
-  padding: 40px 0;
+  padding: 30px 0;
 }
 .contactInfo .contactEmail:hover, .contactInfo .contactEmail:focus {
   -webkit-transform: scale(1.03);
@@ -912,6 +912,9 @@ footer {
             align-items: center;
     width: 100%;
     font-size: 0.9rem;
+  }
+  .contactEmail {
+    padding: 40px 0;
   }
 }
 @media (max-width: 1100px) {
@@ -1228,6 +1231,9 @@ footer {
   }
   .contactInfo .contactIcons {
     font-size: 1rem;
+  }
+  .contactEmail {
+    padding: 20px 0;
   }
   form .formFlex input {
     padding: 15px 20px;
