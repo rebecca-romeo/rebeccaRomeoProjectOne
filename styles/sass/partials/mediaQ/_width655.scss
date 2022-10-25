@@ -1,0 +1,124 @@
+@use "../variables" as v;
+
+
+@media (max-width: 655px) { 
+
+//GENERAL
+  h1 {
+    font-size: 2.7rem;
+  }
+
+  h3 {
+    font-size: 0.9rem;
+  }
+
+// HEADERS
+  .headerNav {
+    font-size: 0.7rem;
+    li {
+      padding: 0px 25px;
+    }
+  } 
+
+  .blogHeader {
+    padding-bottom: 250px;
+    background-position: 30%;
+  }
+
+  .contactHeader {
+    padding-bottom: 200px;
+    h1 {
+      margin-top: 100px;
+    }
+  }
+
+// INDEX
+  .iconsTextContainer {
+    display: flex;
+    .flextest {
+      width: 15%;
+    }
+    .flextest2 {
+      width: 80%;
+      padding-left: 20px;
+    }
+  }
+
+  .indexSearchStyle {
+    .styleTextContainer {
+      text-align: center;
+      p {
+        text-align: center;
+      }
+    }
+  }
+
+  
+// BLOG
+  .blogArticle {
+    padding: 0 25px 15px;
+  }
+
+  .asideTextContainer {
+    padding: 0px 20px 15px;
+    font-size: 0.7rem;
+  }
+
+  .commentSection {
+    padding: 0 25px;
+  }
+
+// CONTACT
+  .contactFormContainer {
+    min-width: 100%;
+    left: 25px;
+    top: 90px;
+    box-shadow: none;
+    padding: 0 40px 25px;
+    height: 400px;
+  }
+
+  .contactInfo {
+    font-size: 0.75rem;
+    flex-direction: column;
+    text-align: center;
+    margin-top: 40px;
+    .contactEmail {
+      border-bottom: 5px solid yellow;
+      margin-bottom: 15px;
+      padding: 25px 0 20px;
+    }
+    .contactIcons {
+      .fa-whatsapp {
+        padding-right: 0px;
+      }
+    }
+  }
+
+  button.commentButton {
+    font-size: 0.7rem;
+  }
+
+  button.submit {
+    margin-top: 15px;
+  }
+
+form {
+  .formFlex {
+    margin: 10px 0;
+    input {
+      margin-bottom: 10px;
+      font-size: 0.7rem;
+    }
+  }
+}
+
+form.blogForm,
+form.contactFormContainer {
+  textarea {
+    font-size: 0.7rem;
+  }
+}
+
+
+} // END

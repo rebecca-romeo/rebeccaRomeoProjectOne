@@ -1,0 +1,13 @@
+@use "../variables" as v;
+
+
+@media (max-width: 410px) {
+  
+// BLOG ASIDE
+  .mission {
+    padding-bottom: 0;
+    width: 100%;
+    padding-left: 0px;
+    text-align: center;
+  }
+}

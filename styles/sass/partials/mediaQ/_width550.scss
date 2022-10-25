@@ -1,0 +1,41 @@
+@use "../variables" as v;
+
+
+
+@media (max-width: 550px) {
+
+// GENERAL
+body {
+  font-size: 0.7rem;
+  line-height: 1.4rem;
+}
+
+h2 {
+  font-size: 1.2rem;
+}
+
+
+// HEADERS
+  .blogHeader {
+    padding-bottom: 250px;
+    background-position: 40%;
+  }
+
+// BLOG
+  .asideTextContainer {
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 30px;
+    .mission {
+      padding-right: 0;
+      width: 70%;
+      padding-left: 35px;
+    }
+  }
+
+  .contactFormContainer {
+    padding: 0 25px 25px;
+  }
+  
+}
+// END

@@ -1,0 +1,93 @@
+
+@use "../variables" as v;
+
+@media (max-width: 775px) {
+
+//GENERAL
+  body {
+    font-size: 0.8rem;
+    line-height: 1.5rem;
+  }
+
+  h2 {
+    font-size: 1.4rem;
+    line-height: 2rem;
+  }
+
+  h3 {
+    font-size: 1rem;
+  }
+
+// HEADERS
+  .indexHeader {
+    padding-bottom: 400px;
+    background-position: 50% 0%;
+  }
+
+//  INDEX
+  .indexGallery {
+    ul {
+      flex-direction: column;
+      justify-content: space-evenly;
+      align-items: center;
+      padding: 40px 0;
+      li {
+        width: 50%;
+        margin: 20px;
+        padding: 0;
+      }
+    }
+  }
+
+  // BLOG
+  .blogArticle,
+  .commentSection {
+    padding: 0 45px 20px;
+  }
+
+  .comment2 {
+    margin-top: 70px;
+  }
+
+  .asideTextContainer {
+    padding: 0 30px 30px;
+  }
+
+  //CONTACT
+
+  .contactInfo {
+    font-size: 0.82rem;
+    .contactIcons {
+      font-size: 1rem;
+    }
+  }
+
+  form {
+    .formFlex {
+      input {
+        padding: 15px 20px;
+        font-size: 0.8rem; 
+      }
+    }
+  }
+
+  .contactFormContainer {
+    padding: 20px 35px;
+    margin: 0px;
+    height: 500px;
+    textarea {
+      padding: 25px;
+      margin: 0;
+    }
+  }
+
+  button {
+    margin-top: 10px;
+  }
+
+  button.submit {
+    margin-top: 0;
+  }
+
+
+} // END

@@ -41,4 +41,12 @@
 @use "./partials/footer";
 
 // MEDIA QUERIES
-@use "./partials/mediaQs";
+@use "./partials/mediaQ/width1200";
+@use "./partials/mediaQ/width1100";
+@use "./partials/mediaQ/width940";
+@use "./partials/mediaQ/width865";
+@use "./partials/mediaQ/width775";
+@use "./partials/mediaQ/width655";
+@use "./partials/mediaQ/width550";
+@use "./partials/mediaQ/width470";
+@use "./partials/mediaQ/width410";

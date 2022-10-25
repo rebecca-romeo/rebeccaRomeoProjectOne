@@ -1,0 +1,197 @@
+@use "../variables" as v;
+
+
+
+@media (max-width: 1100px) {
+
+  // GENERAL 
+  body {
+    font-size: 0.9rem;
+  }
+
+  h1 {
+    font-size: 3.2rem;
+  }
+
+  h2 {
+    font-size: 1.55rem
+  }
+
+  h3 {
+    font-size: 1.2rem
+  }
+
+  //HEADERS
+  .headerNav {
+    font-size: 0.85rem;
+  }
+
+  .indexHeader {
+    background-position: center;
+    padding-bottom: 400px;
+    h1 {
+      padding-left: 20px;
+    }
+    .blueChairsContainer {
+      visibility: hidden;
+    }
+  }
+
+  .blogHeader {
+    padding-bottom: 280px;
+  }
+
+  // INDEX
+    //materials section
+  .materialsFlexContainer {
+    padding: 80px 0;
+  }
+
+  .materialsImgContainer {
+    align-self: center;
+  }
+
+  //gallery section
+  .indexGallery {
+    ul {
+      li {
+        padding: 80px 0;
+      }
+    }
+  }
+
+  //icons section
+  .indexIconsSection {
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    h2 {
+      margin-bottom: 10px;
+    }
+    .iconsTextContainer {
+      width: 85%;
+    }
+  }
+
+  .iconsMarginBottom {
+    margin-bottom: 30px;
+  }
+
+  .indexSearchStyle {
+    .styleTextContainer {
+      padding: 90px 0;
+    }
+    }
+  
+    .indexIconsSection,
+    .materialsFlexContainer  {
+      padding: 70px 0;
+    }
+
+  // BLOG
+  .blogMainFlex {
+    flex-direction: column;
+    .blogSection {
+      width: 100%;
+      transform: translate(0, 0);
+    }
+    .asideContainer {
+      transform: translate(0, 0);
+      width: 100%;
+      flex-direction: row;
+      position: static;  
+    }
+  }
+
+  .blogImgContainer {
+    background-color: v.$white;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    position: static;
+    transform: translate(0, 0);
+    padding-top: 40px;
+  }
+
+  .blogImg {
+    width: 85%;
+    justify-self: center;
+  }
+
+  .blogArticle {
+    border-right: none;
+  }
+
+  .blogArticle, 
+  .commentSection {
+  padding: 0 70px 20px;
+  }
+
+  .blogTextContainer {
+    padding-top: 15px;
+  }
+
+  .asideTextContainer, 
+  .asideImgContainer {
+    transform: translate(0, 0);
+    position: static;
+    padding-bottom: 10px;
+    background-color: v.$ice;
+  }
+
+  .asideImgContainer {
+    width: 45%;
+  }
+
+  .asideImg {
+    box-shadow: none;
+    border-left: 10px solid v.$brightYellow;
+    border-bottom: 10px solid v.$brightYellow;
+  }
+
+  .asideTextContainer {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 50px;
+    font-size: 0.85rem;
+  }
+
+  .mission {
+    padding-bottom: 0;
+    width: 50%;
+    padding-right: 25px;
+  }
+
+  h3 {
+    padding-bottom: 2px;
+  }
+
+  span {
+    border-bottom: 5px solid v.$brightYellow;
+  }
+
+  // FORMS
+  .formFlex {
+    width: 100%;
+    input {
+      display: flex;
+      min-width: 40%;  
+      font-size: 0.9rem;
+    }
+  }
+
+  button {
+    &:hover, 
+    &:focus {
+      transform: scale(1.02);
+    }
+  }
+
+  // FOOTER 
+  footer {
+    font-size: 0.7rem;
+    padding: 5px;
+  }
+
+  
+} // END

@@ -1,0 +1,43 @@
+@use "../variables" as v;
+
+
+@media (max-width: 940px) {
+
+//GENERAL
+  h3 {
+  font-size: 1.1rem;
+}
+
+//INDEX
+.materialsImgContainer {
+  display: none;
+}
+
+.materialsFlexContainer { 
+  .wrapper {
+    .materialsTextContainer {
+      margin-right: 0;
+      align-items: center;
+      text-align: center;
+      p {
+        margin-bottom: 15px;
+      }
+    }
+  }
+}
+
+  .indexSearchStyle {
+  .styleTextContainer {
+    padding: 70px 0;
+    }
+  }
+
+  //BLOG
+  .asideTextContainer {
+    font-size: 0.8rem;
+  }
+  .asideImgContainer {
+    width: 50%; 
+  }
+
+} // END
