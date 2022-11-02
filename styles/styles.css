@@ -1203,16 +1203,19 @@ footer {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    -webkit-box-pack: space-evenly;
-        -ms-flex-pack: space-evenly;
-            justify-content: space-evenly;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
     padding: 40px 0;
   }
   .indexGallery ul li {
-    width: 50%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 80%;
     margin: 20px;
     padding: 0;
   }
@@ -1362,6 +1365,13 @@ form.contactFormContainer textarea {
     padding-bottom: 250px;
     background-position: 40%;
   }
+  .styleTextContainer.wrapper {
+    padding: 40px 0;
+  }
+  .indexIconsSection,
+.materialsFlexContainer {
+    padding: 40px 0;
+  }
   .asideTextContainer {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -1392,11 +1402,11 @@ form.contactFormContainer textarea {
     padding: 0px 15px;
   }
   .styleTextContainer.wrapper {
-    padding: 50px 0;
+    padding: 30px 0;
   }
   .indexIconsSection,
 .materialsFlexContainer {
-    padding: 50px 0;
+    padding: 30px 0;
   }
   .indexGallery ul {
     padding: 40px 0;
